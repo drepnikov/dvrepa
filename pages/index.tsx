@@ -23,6 +23,11 @@ const Home: NextPage = () => {
               Поздороваться
             </a>
           </div>
+          <div className={css.logos}>
+            <object type={"image/svg+xml"} data={"/js_logo.svg"} />
+            <object type={"image/svg+xml"} data={"/react_logo.svg"} />
+            <object type={"image/svg+xml"} data={"/ts_logo.svg"} />
+          </div>
         </section>
       </main>
       <footer>Футеры</footer>
