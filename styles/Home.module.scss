@@ -1,0 +1,36 @@
+.header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.helloContainer {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  padding: 0 50px;
+  margin: 0 auto;
+  text-align: left;
+  top: 50%;
+  width: 1140px;
+  max-width: calc(100% - 60px);
+
+  .helloContainer__fio {
+    font-size: 4rem;
+    margin: 0;
+  }
+
+  .helloContainer__description {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .helloContainer__btn {
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding: 0.5rem 1.5rem;
+    background-color: #ffe381;
+  }
+}
