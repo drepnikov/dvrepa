@@ -13,6 +13,9 @@ const Navigation: React.FC<INavigationProps> = () => {
         <li>
           <a href="#contacts">Контакты</a>
         </li>
+        <li>
+          <a href="#contacts">Блог</a>
+        </li>
       </ul>
     </nav>
   );

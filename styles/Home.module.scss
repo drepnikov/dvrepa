@@ -7,6 +7,7 @@
 
 .helloContainer {
   display: flex;
+  overflow: hidden;
   align-items: center;
   height: 100vh;
   padding: 0 50px;
@@ -36,10 +37,11 @@
 
   .logos {
     display: flex;
+    padding-bottom: 75px;
 
     object {
-      width: 200px;
-      padding: 15px;
+      width: 150px;
+      padding: 10px;
 
       &:nth-child(1) {
         animation: float-up 6s ease-in-out infinite;
