@@ -4,7 +4,7 @@ import { PageContainer } from "components/PageContainer/PageContainer";
 const Blog: NextPage = () => {
   return (
     <PageContainer>
-      <main>Привет мир</main>
+      <main>== Это блог ==</main>
     </PageContainer>
   );
 };
