@@ -1,34 +1,31 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import { Navigation } from "components/Navigation/Navigation";
-import css from "styles/Home.module.scss";
-import classNames from "classnames";
+import { useHomePageStyles } from "styles/Home/useHomePageStyles";
 
 const Home: NextPage = () => {
-  const helloContainerClassName = classNames(css.helloContainer);
+  const styles = useHomePageStyles();
 
   return (
     <>
       <Head>
         <title>d.v.repnikov</title>
       </Head>
-      <header className={css.header}>
+      <header className={styles.header}>
         <Navigation />
       </header>
       <main>
-        <section className={helloContainerClassName}>
+        <section className={styles.helloContainer}>
           <div>
-            <h1 className={css.helloContainer__fio}>Репников.Дмитрий</h1>
-            <p className={css.helloContainer__description}>
-              Frontend-разработчик
-            </p>
+            <h1 className={styles.fio}>Репников.Дмитрий</h1>
+            <p className={styles.description}>Frontend-разработчик</p>
             <p>
-              <a className={css.helloContainer__btn} href={"#contacts"}>
+              <a className={styles.sayHiBtn} href={"#contacts"}>
                 Поздороваться
               </a>
             </p>
           </div>
-          <div className={css.logos}>
+          <div className={styles.logos}>
             <object type={"image/svg+xml"} data={"/js_logo.svg"} />
             <object type={"image/svg+xml"} data={"/ts_logo.svg"} />
             <object type={"image/svg+xml"} data={"/react_logo.svg"} />

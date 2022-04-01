@@ -17,17 +17,17 @@
   width: 1140px;
   max-width: calc(100% - 60px);
 
-  .helloContainer__fio {
+  .fio {
     font-size: 4rem;
     margin: 0;
   }
 
-  .helloContainer__description {
+  .description {
     font-size: 2rem;
     margin-bottom: 2rem;
   }
 
-  .helloContainer__btn {
+  .sayHiBtn {
     text-transform: uppercase;
     font-weight: 600;
     letter-spacing: 2px;
