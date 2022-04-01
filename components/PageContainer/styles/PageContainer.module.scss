@@ -1,3 +1,5 @@
+@import "styles/vars";
+
 .header {
   position: absolute;
   width: 100%;
@@ -7,5 +9,7 @@
 }
 
 .document {
+  @include layout;
+
   margin-top: 10vh;
 }

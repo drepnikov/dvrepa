@@ -22,9 +22,25 @@ const Home: NextPage = () => {
             </p>
           </div>
           <div className={styles.logos}>
-            <object type={"image/svg+xml"} data={"/js_logo.svg"} />
-            <object type={"image/svg+xml"} data={"/ts_logo.svg"} />
-            <object type={"image/svg+xml"} data={"/react_logo.svg"} />
+            <div>
+              <object
+                className={styles.jsLogo}
+                type={"image/svg+xml"}
+                data={"/js_logo.svg"}
+              />
+            </div>
+            <div>
+              <object
+                className={styles.tsLogo}
+                type={"image/svg+xml"}
+                data={"/ts_logo.svg"}
+              />
+              <object
+                className={styles.reactLogo}
+                type={"image/svg+xml"}
+                data={"/react_logo.svg"}
+              />
+            </div>
           </div>
         </section>
       </main>

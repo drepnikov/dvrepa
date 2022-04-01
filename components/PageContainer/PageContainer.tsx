@@ -11,7 +11,7 @@ const PageContainer: React.FC<IPageContainerProps> = ({ children }) => {
   return (
     <>
       <Head>
-        <title>d.v.repnikov</title>
+        <title>dvrepa</title>
       </Head>
       <header className={styles.header}>
         <Navigation />

@@ -1,8 +1,6 @@
 @import "styles/vars";
 
 .helloContainer {
-  @include layout;
-
   display: flex;
   overflow: hidden;
   align-items: center;
@@ -10,8 +8,6 @@
 
   text-align: left;
   top: 50%;
-
-  max-width: calc(100% - 60px);
 
   .fio {
     font-size: 4rem;
@@ -33,24 +29,42 @@
 
   .logos {
     display: flex;
+    flex-direction: column;
     padding-bottom: 75px;
+    margin-left: 60px;
 
     object {
       width: 150px;
       padding: 10px;
-
-      &:nth-child(1) {
-        animation: float-up 6s ease-in-out infinite;
-      }
-
-      &:nth-child(2) {
-        animation: float-down 6s ease-in-out infinite;
-      }
-
-      &:nth-child(3) {
-        animation: float-up 6s ease-in-out infinite;
-      }
     }
+
+    div:first-child {
+      align-self: center;
+    }
+
+    .jsLogo {
+      animation: float-left 6s ease-in-out infinite;
+    }
+
+    .tsLogo {
+      animation: float-up 6s ease-in-out infinite;
+    }
+
+    .reactLogo {
+      animation: float-down 6s ease-in-out infinite;
+    }
+  }
+}
+
+@keyframes float-left {
+  0% {
+    transform: translatex(0px);
+  }
+  50% {
+    transform: translatex(-20px);
+  }
+  100% {
+    transform: translatex(0px);
   }
 }
 

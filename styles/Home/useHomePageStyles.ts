@@ -10,6 +10,9 @@ const useHomePageStyles = () => {
     const description = classNames(css.description);
     const sayHiBtn = classNames(css.sayHiBtn);
     const logos = classNames(css.logos);
+    const tsLogo = classNames(css.tsLogo);
+    const jsLogo = classNames(css.jsLogo);
+    const reactLogo = classNames(css.reactLogo);
 
     return {
       helloContainer,
@@ -18,6 +21,9 @@ const useHomePageStyles = () => {
       description,
       sayHiBtn,
       logos,
+      tsLogo,
+      jsLogo,
+      reactLogo
     };
   }, []);
 };
