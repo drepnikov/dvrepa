@@ -1,6 +1,6 @@
 import { useMemo } from "react";
 import classNames from "classnames";
-import css from "styles/Home/Home.module.scss";
+import css from "./Home.module.scss";
 
 const useHomePageStyles = () => {
   return useMemo(() => {

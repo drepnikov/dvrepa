@@ -1,20 +1,16 @@
-.header {
-  position: absolute;
-  width: 100%;
-  top: 0;
-  left: 0;
-}
+@import "styles/vars";
 
 .helloContainer {
+  @include layout;
+
   display: flex;
   overflow: hidden;
   align-items: center;
-  height: 100vh;
-  padding: 0 50px;
-  margin: 0 auto;
+  height: 90vh;
+
   text-align: left;
   top: 50%;
-  width: 1140px;
+
   max-width: calc(100% - 60px);
 
   .fio {

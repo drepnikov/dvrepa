@@ -1,5 +1,6 @@
 import * as React from "react";
 import css from "./Navigation.module.scss";
+import { MyLink } from "components/MyLink/MyLink";
 
 interface INavigationProps {}
 
@@ -8,13 +9,13 @@ const Navigation: React.FC<INavigationProps> = () => {
     <nav className={css.navigation}>
       <ul>
         <li>
-          <a href="#about">Обо мне</a>
+          <MyLink to={"/#about"} title={"Обо мне"} />
         </li>
         <li>
-          <a href="#contacts">Контакты</a>
+          <MyLink to={"/#contacts"} title={"Контакты"} />
         </li>
         <li>
-          <a href="#contacts">Блог</a>
+          <MyLink to={"/blog"} title={"Блог"} />
         </li>
       </ul>
     </nav>

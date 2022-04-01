@@ -1,28 +1,24 @@
 import type { NextPage } from "next";
-import Head from "next/head";
-import { Navigation } from "components/Navigation/Navigation";
 import { useHomePageStyles } from "styles/Home/useHomePageStyles";
+import { PageContainer } from "components/PageContainer/PageContainer";
+import { MyLink } from "components/MyLink/MyLink";
 
 const Home: NextPage = () => {
   const styles = useHomePageStyles();
 
   return (
-    <>
-      <Head>
-        <title>d.v.repnikov</title>
-      </Head>
-      <header className={styles.header}>
-        <Navigation />
-      </header>
+    <PageContainer>
       <main>
         <section className={styles.helloContainer}>
           <div>
             <h1 className={styles.fio}>Репников.Дмитрий</h1>
             <p className={styles.description}>Frontend-разработчик</p>
             <p>
-              <a className={styles.sayHiBtn} href={"#contacts"}>
-                Поздороваться
-              </a>
+              <MyLink
+                to={"/#contacts"}
+                title={"Поздороваться"}
+                className={styles.sayHiBtn}
+              />
             </p>
           </div>
           <div className={styles.logos}>
@@ -32,8 +28,7 @@ const Home: NextPage = () => {
           </div>
         </section>
       </main>
-      {/*<footer>Футер</footer>*/}
-    </>
+    </PageContainer>
   );
 };
 
