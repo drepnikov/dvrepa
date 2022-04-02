@@ -4,39 +4,39 @@ import { PageContainer } from "components/PageContainer/PageContainer";
 import { MyLink } from "components/MyLink/MyLink";
 
 const Home: NextPage = () => {
-  const styles = useHomePageStyles();
+  const s = useHomePageStyles();
 
   return (
     <PageContainer>
       <main>
-        <section className={styles.helloContainer}>
+        <section className={s.helloContainer}>
           <div>
-            <h1 className={styles.fio}>Репников.Дмитрий</h1>
-            <p className={styles.description}>Frontend-разработчик</p>
+            <h1 className={s.fio}>Репников.Дмитрий</h1>
+            <p className={s.description}>Frontend-разработчик</p>
             <p>
               <MyLink
                 to={"/#contacts"}
                 title={"Поздороваться"}
-                className={styles.sayHiBtn}
+                className={s.sayHiBtn}
               />
             </p>
           </div>
-          <div className={styles.logos}>
-            <div>
+          <div className={s.logos}>
+            <div className={s.firstRowLogoContainer}>
               <object
-                className={styles.jsLogo}
+                className={s.jsLogo}
                 type={"image/svg+xml"}
                 data={"/js_logo.svg"}
               />
             </div>
             <div>
               <object
-                className={styles.tsLogo}
+                className={s.tsLogo}
                 type={"image/svg+xml"}
                 data={"/ts_logo.svg"}
               />
               <object
-                className={styles.reactLogo}
+                className={s.reactLogo}
                 type={"image/svg+xml"}
                 data={"/react_logo.svg"}
               />

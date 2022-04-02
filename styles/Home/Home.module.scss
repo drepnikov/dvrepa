@@ -8,52 +8,52 @@
 
   text-align: left;
   top: 50%;
+}
 
-  .fio {
-    font-size: 4rem;
-    margin: 0;
-  }
+.fio {
+  font-size: 4rem;
+  margin: 0;
+}
 
-  .description {
-    font-size: 2rem;
-    margin-bottom: 2rem;
-  }
+.description {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
 
-  .sayHiBtn {
-    text-transform: uppercase;
-    font-weight: 600;
-    letter-spacing: 2px;
-    padding: 0.5rem 1.5rem;
-    background-color: #ffe381;
-  }
+.sayHiBtn {
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  padding: 0.5rem 1.5rem;
+  background-color: #ffe381;
+}
 
-  .logos {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 75px;
-    margin-left: 60px;
+.logos {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 75px;
+  margin-left: 60px;
+}
 
-    object {
-      width: 150px;
-      padding: 10px;
-    }
+.firstRowLogoContainer {
+  align-self: center;
+}
 
-    div:first-child {
-      align-self: center;
-    }
+.logo {
+  width: 150px;
+  padding: 10px;
+}
 
-    .jsLogo {
-      animation: float-left 6s ease-in-out infinite;
-    }
+.jsLogo {
+  animation: float-left 6s ease-in-out infinite;
+}
 
-    .tsLogo {
-      animation: float-up 6s ease-in-out infinite;
-    }
+.tsLogo {
+  animation: float-up 6s ease-in-out infinite;
+}
 
-    .reactLogo {
-      animation: float-down 6s ease-in-out infinite;
-    }
-  }
+.reactLogo {
+  animation: float-down 6s ease-in-out infinite;
 }
 
 @keyframes float-left {
