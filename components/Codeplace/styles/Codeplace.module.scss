@@ -1,0 +1,61 @@
+.container {
+  width: 500px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+  background-color: #fff;
+}
+
+.panel {
+  height: 50px;
+  border-bottom: 1px solid #eaeaea;
+  display: flex;
+  align-items: center;
+}
+
+.panelButtons {
+  margin: 0 12px;
+}
+
+.fileTabsContainer {
+  display: flex;
+  align-items: flex-end;
+  height: 100%;
+  position: relative;
+}
+
+.fileTab {
+  height: 40px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border: 1px solid #eaeaea;
+  border-bottom-color: #fff;
+  background: #fff;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  bottom: -1px;
+  position: relative;
+
+  span {
+    font-size: 12px;
+  }
+}
+
+.windowBtn {
+  border-radius: 50%;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+}
+
+.windowCloseBtn {
+  background-color: #ff5f56;
+}
+.windowMinimazeBtn {
+  background-color: #ffbd2e;
+  margin-left: 8px;
+}
+.windowFullScreenBtn {
+  background-color: #27c93f;
+  margin-left: 8px;
+}
