@@ -8,7 +8,6 @@ const useHomePageStyles = () => {
       helloContainer: classNames(css.helloContainer),
       header: classNames(css.header),
       fio: classNames(css.fio),
-      description: classNames(css.description),
       sayHiBtn: classNames(css.sayHiBtn),
       logos: classNames(css.logos),
       firstRowLogoContainer: classNames(css.firstRowLogoContainer),

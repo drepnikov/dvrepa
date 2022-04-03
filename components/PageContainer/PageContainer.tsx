@@ -6,17 +6,17 @@ import { usePageContainerStyles } from "components/PageContainer/styles/usePageC
 interface IPageContainerProps {}
 
 const PageContainer: React.FC<IPageContainerProps> = ({ children }) => {
-  const styles = usePageContainerStyles();
+  const s = usePageContainerStyles();
 
   return (
     <>
       <Head>
         <title>dvrepa</title>
       </Head>
-      <header className={styles.header}>
+      <header className={s.header}>
         <Navigation />
       </header>
-      <section className={styles.document}>{children}</section>
+      <section className={s.document}>{children}</section>
     </>
   );
 };

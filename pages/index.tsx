@@ -2,6 +2,7 @@ import type { NextPage } from "next";
 import { useHomePageStyles } from "styles/Home/useHomePageStyles";
 import { PageContainer } from "components/PageContainer/PageContainer";
 import { MyLink } from "components/MyLink/MyLink";
+import { CodePlace } from "components/Codeplace/Codeplace";
 
 const Home: NextPage = () => {
   const s = useHomePageStyles();
@@ -12,7 +13,7 @@ const Home: NextPage = () => {
         <section className={s.helloContainer}>
           <div>
             <h1 className={s.fio}>Репников.Дмитрий</h1>
-            <p className={s.description}>Frontend-разработчик</p>
+            <CodePlace stringToCode={"Frontend-Разработчик"} />
             <p>
               <MyLink
                 to={"/#contacts"}

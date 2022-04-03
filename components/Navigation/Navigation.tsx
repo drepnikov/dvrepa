@@ -1,12 +1,14 @@
 import * as React from "react";
-import css from "./Navigation.module.scss";
 import { MyLink } from "components/MyLink/MyLink";
+import { useNavigationStyles } from "components/Navigation/styles/useNavigationStyles";
 
 interface INavigationProps {}
 
 const Navigation: React.FC<INavigationProps> = () => {
+  const s = useNavigationStyles();
+
   return (
-    <nav className={css.navigation}>
+    <nav className={s.navigation}>
       <ul>
         <li>
           <MyLink to={"/#about"} title={"Обо мне"} />
