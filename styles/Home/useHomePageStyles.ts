@@ -14,6 +14,8 @@ const useHomePageStyles = () => {
       tsLogo: classNames(css.logo, css.tsLogo),
       jsLogo: classNames(css.logo, css.jsLogo),
       reactLogo: classNames(css.logo, css.reactLogo),
+      sayHiContainer: classNames(css.sayHiContainer),
+      codePlaceContainer: classNames(css.codePlaceContainer),
     };
   }, []);
 };

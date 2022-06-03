@@ -13,8 +13,10 @@ const Home: NextPage = () => {
         <section className={s.helloContainer}>
           <div>
             <h1 className={s.fio}>Репников.Дмитрий</h1>
-            <CodePlace stringToCode={"Frontend-Разработчик"} />
-            <p>
+            <div className={s.codePlaceContainer}>
+              <CodePlace stringToCode={"Frontend-Разработчик"} />
+            </div>
+            <p className={s.sayHiContainer}>
               <MyLink
                 to={"/#contacts"}
                 title={"Поздороваться"}

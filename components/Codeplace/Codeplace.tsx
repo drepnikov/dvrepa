@@ -24,6 +24,7 @@ const CodePlace: React.FC<ICodePlaceProps> = ({ stringToCode }) => {
       </div>
       <div className={s.codePlace}>
         <div className={s.stringCodeContainer}>
+          <span>{"1. "}</span>
           <span>{stringToCode}</span>
         </div>
       </div>
