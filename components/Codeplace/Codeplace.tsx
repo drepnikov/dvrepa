@@ -22,7 +22,11 @@ const CodePlace: React.FC<ICodePlaceProps> = ({ stringToCode }) => {
           </div>
         </div>
       </div>
-      {stringToCode}
+      <div className={s.codePlace}>
+        <div className={s.stringCodeContainer}>
+          <span>{stringToCode}</span>
+        </div>
+      </div>
     </div>
   );
 };

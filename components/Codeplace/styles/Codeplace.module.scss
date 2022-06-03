@@ -59,3 +59,42 @@
   background-color: #27c93f;
   margin-left: 8px;
 }
+
+.codePlace {
+ display: flex;
+}
+
+.stringCodeContainer {
+  padding-top: 15px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+
+  span {
+    display: inline-block;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    letter-spacing: 0.1rem;
+    animation: typing 2s steps(40, end), blink-caret 0.75s step-end infinite;
+    border-right: 0.15em solid black;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: black;
+  }
+}

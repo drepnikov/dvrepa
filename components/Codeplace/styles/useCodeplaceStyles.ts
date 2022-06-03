@@ -13,6 +13,8 @@ const useCodeplaceStyles = () => {
       windowCloseBtn: classNames(css.windowBtn, css.windowCloseBtn),
       windowFullScreenBtn: classNames(css.windowBtn, css.windowFullScreenBtn),
       windowMinimazeBtn: classNames(css.windowBtn, css.windowMinimazeBtn),
+      stringCodeContainer: classNames(css.stringCodeContainer),
+      codePlace: classNames(css.codePlace),
     };
   }, []);
 };
