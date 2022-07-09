@@ -1,33 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   font-size: 17px;
   color: #000;
   font-family: "Open Sans", sans-serif;
   background-color: #fffbf0;
-  min-height: 100vh;
+
 }
-
-* {
-  box-sizing: border-box;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-ul {
-  padding: 0;
-  margin: 0;
-
-  li {
-    list-style: none;
-  }
-}
-
-button {
-  border: none;
-  background-color: inherit;
-  padding: 0;
-}
-
